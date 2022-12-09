@@ -1,0 +1,105 @@
+.comic_image {
+  width: 10vw;
+  height: 25vh;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.comic_image:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-box-shadow: 3px 3px 5px #000;
+  -moz-box-shadow: 3px 3px 5px #000;
+  box-shadow: 3px 3px 5px #000;
+  -webkit-backface-visibility: hidden;
+}
+
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image_container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.modal {
+  position: fixed;
+  cursor: pointer;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_content {
+  background-color: #000;
+  padding: 2em;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+  max-width: 700px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20vh;
+  z-index: 2;
+  display: flex;
+}
+
+.comic_title {
+  margin-left: 30px;
+}
+.large_image {
+  width: 20vw;
+  height: 50vh;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
